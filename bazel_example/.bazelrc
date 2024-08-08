@@ -1,0 +1,5 @@
+build --action_env CC=/usr/bin/gcc
+build --action_env CXX=/usr/bin/g++
+
+#build --action_env CC=/opt/rh/devtoolset-10/root/usr/bin/gcc
+#build --action_env CC=/opt/rh/devtoolset-10/root/usr/bin/g++

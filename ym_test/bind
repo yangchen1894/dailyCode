@@ -1,0 +1,35 @@
+//std::function<viod(int)> f; //这里表示function的对象f的参数是int，返回值是void
+
+#include <iostream>
+#include <function>
+
+struct Foo{
+    Foo(int num) : num_(num);
+    void print_add(int i) const{
+        std::cout << num_ + i << std::endl;
+        };
+    int num_;
+};
+
+void print_num(int i){
+    std::cout << i << std::endl;
+}
+
+struct PrintNum{
+    void operator()(int i) const{
+        std::cout << i << std::endl;
+    }
+};
+
+int main()
+{
+    //存储自由函数
+    std::function<void(int)> f_display = print_num;
+    f_display(-9);
+
+    //存储lambda
+    std::function<void()> f_display_42 = [](){
+        print_num(42);
+    };
+    f_display_42();
+}

@@ -1,0 +1,23 @@
+--- fork.cpp	2024-06-07 20:05:47.339450276 +0800
++++ fork1.cpp	2024-06-20 15:43:59.056569175 +0800
+@@ -2,7 +2,7 @@
+ #include <stdio.h>
+ #include <unistd.h>
+ 
+-int main(int argc, int *argv[])
++int main(int argc, char *argv[])
+ {
+ 	pid_t fpid; //fpid表示fork函数返回的值
+ 	int count = 0;
+@@ -16,9 +16,9 @@
+ 	}
+ 	else {
+ 		printf("i am the parent process, my process id is %d/n", getpid());
+-		printf("我是孩子他爹\n");
++		printf("我是孩子他爹-----\n");
+ 		count++;
+ 	}
+-	printf("统计结果是: %d/n", count);
++	printf("统计结果是:--------- %d/n", count);
+ 	return 0;
+ }
