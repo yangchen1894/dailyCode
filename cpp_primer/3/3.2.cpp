@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
     while(std::getline(file_stream, line)){
         Comm::StrStripWhiteSpace(line);
         Comm::StrStripPunct(line);
+        std::tolower(line);
         words.emplace_back(line); 
     }
 

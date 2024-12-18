@@ -2,6 +2,7 @@
 #include "hello_greet.h"
 #include <iostream>
 #include <string>
+// #include "example.pb.h"
 
 int main(int argc, char **argv)
 {
@@ -12,5 +13,6 @@ int main(int argc, char **argv)
     }
     std::cout << get_greet(who) << std::endl;
     print_localtime();
+
     return 0;
 }

@@ -1,0 +1,57 @@
+{
+    "userid": 99999999999999999,
+    "name": "张三",
+    "english_name": "jackzhang",
+    "mobile": "15913215421",
+    "department": [
+        1,
+        2
+    ],
+    "order": [
+        10,
+        40
+    ],
+    "positions": [
+        "产品经理1",
+        "产品经理2"
+    ],
+    "gender": "1",
+    "email": "zhangsans@gzdev.com",
+    "biz_mail": "zhangsans@gzdev.com",
+    "biz_mail_alias": [
+        "zhangsans_1@gzdev.com",
+        "zhangsans_2@gzdev.com"
+    ],
+    "is_leader_in_dept": [
+        1,
+        0
+    ],
+    "direct_leader": [
+        "zhangsans"
+    ],
+    "enable": 1,
+    "initpwd": "1234abcdE",
+    "isnotify": 1,
+    "avatar_mediaid": "Get(WwOpenUploadMedia_media_id)",
+    "telephone": "020-123456",
+    "extattr": {
+        "attrs": [
+            {
+                "type": 0,
+                "name": "文本名称",
+                "value": "文本"
+            },
+            {
+                "type": 1,
+                "name": "网页名称",
+                "web": {
+                    "url": "http://www.test.com",
+                    "title": "标题"
+                }
+            }
+        ]
+    },
+    "external_profile": {
+        "external_corp_name": "单位简称"
+    }
+}
